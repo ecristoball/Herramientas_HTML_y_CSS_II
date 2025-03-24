@@ -15,12 +15,25 @@ header {
         height: auto; /* Mantiene las proporciones */
         display: block; 
       }
+      @media (min-width: 768px) {
+        width: 10%;
+      }
+      @media (min-width: 1024px) {
+        width: 10%;
+      }
+
     }
     .header__titulo{
-      font-size: 1.8rem;
+      font-size: 1.6rem;
        align-items: left;
        margin:10px;
        color:white;
+       @media (min-width: 768px) {
+        font-size: 3.6rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 3.6rem;
+      }
      }
   
   }

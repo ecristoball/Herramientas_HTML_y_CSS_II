@@ -59,15 +59,17 @@ body {
  { border-bottom: 1px solid #a8a5a5;
  }
 
+.nombre,
 .ingredientes,
 .elaboracion, 
 .iconos, 
 .introduccion {
   width: 90%;
- 
+  margin:auto;
   background-color: $container-white;
   margin-bottom: 5px;
   align-items: center;
+  
   
 }
 
