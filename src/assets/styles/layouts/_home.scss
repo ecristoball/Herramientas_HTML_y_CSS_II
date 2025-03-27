@@ -12,8 +12,8 @@ body {
   /* stylelint-disable-next-line unit-disallowed-list */
   font-size: 16px;
   line-height: 24px;
-  color: $uoc-corporate;
-  background-color: $uoc-bg;
+  color: $font-primary;
+  background-color: $ec-bg;
 }
 .container {
   display: grid;
@@ -26,6 +26,7 @@ body {
   @media (min-width: $mqMinWidth) {
     // Tablet y Desktop
     grid-template-columns: 1fr 2fr 1fr;
+    font-size: 1.1rem;
     .ingredientes {
       grid-column: 1; // PRIMERA columna (más ancha)
       align-items: start;
@@ -37,7 +38,7 @@ body {
       grid-column: 3; // tercera columna
     }
   }
-
+    
 }
 
 .container__borderbottom {
@@ -49,9 +50,10 @@ body {
 .elaboracion,
 .iconos,
 .informacion {
+  padding: 0.5rem 0;
+  margin: 0.5rem;
   align-items: center;
   width: 90%;
-  margin-bottom: 15px;
   background-color: $container-white;
 }
 .nombre,
@@ -60,10 +62,11 @@ body {
 }
 .iconos {
   text-align: center;
+
 }
 .ingredientes__item {
   margin-bottom: 8px;
-  font-size: 1rem;
+  
   
 }
 
@@ -90,32 +93,22 @@ body {
 
 .seccion {
   border-bottom: 1px solid rgb(76 76 76);
-  padding: 0.5rem 0;
-  margin: 0.5rem;
+
   @media (min-width:$mqMinWidth) {
     border-bottom: 0 solid rgb(76 76 76);
   }
 }
 
 .elaboracion__imagen {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
+  display: block; /* Convierte la imagen en un bloque */
+  margin: 10px auto; /* Centra horizontalmente */
+  max-width: 90%; /* Evita que supere el ancho del contenedor */
+  height: auto; /* Mantiene la proporción */
+  @media (min-width:$mqMinWidth) {
+    max-width: 70%; 
+  }
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 2rem;
-  box-shadow:
-    0 4px 6px -1px rgba(0 0 0 / 0.1),
-    0 2px 4px -1px rgba(0 0 0 / 0.06);
-}
 
 .uoc-logo {
   display: block;
@@ -134,10 +127,8 @@ body {
    font-size: 2rem;
   line-height: 1.2;
   font-weight: 700;
-  background-color: #ffff00;
   @media (min-width: $mqMinWidth) {
     font-size: 3rem;
-    background-color: #ff0000;
   }
 }
 
@@ -153,10 +144,8 @@ body {
 .receta-imagen img {
   width: 100%;
   height: auto;
-
-
   @media (min-width: $mqMinWidth) {
-    width: 70%;
+    width: 60%;
     margin: auto;
   }
 }

@@ -1,0 +1,56 @@
+footer {
+    font-size: 0.75rem;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si es necesario */
+    top: 0; /* Lo coloca en la parte superior */
+    left: 0; /* Alinea a la izquierda */
+    justify-content: start; /* Distribuye los elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+    width: 100%; /* Ocupa todo el ancho */
+    font-family: $font-family-sans-serif;
+    /* comento pero lo pongo luego para desktop display: flex;*/
+    color: $font-white; 
+    background-color: $header-color;
+  
+    /* Para móviles (se apilan los elementos) */
+    display: block;
+    .footer__logofooter {
+      margin:auto;
+      img {
+        display: block;
+        width: 20%; /* Ajusta el ancho al contenedor */
+        height: auto; /* Mantiene las proporciones */
+        margin:auto;
+      }
+      @media (min-width: $mqMinWidth) {
+        width: 50%;
+      }
+    }
+    .footer__autor{
+        margin:auto;
+        text-align: center;
+    }
+    .footer__redes{
+        padding:10px;;
+
+    }
+    ul {
+      display: flex;
+      justify-content: center; /* Centra los elementos en la línea */
+      list-style-type:none;
+      margin-bottom: 5px;
+      padding: 0; /* Evita espacios extra en algunos navegadores */
+      gap: 10px; /* Espacio entre elementos */
+    }
+    li{
+        text-decoration: none;
+    }
+     @media (min-width: $mqMinWidth) {
+      display: flex; /* Activa flexbox en tablet y desktop */
+      justify-content: start; /* Alinea elementos a la izquierda */
+      align-items: center; /* Centra verticalmente */
+      gap: 20px; /* Espacio entre logo y título */
+    }
+    
+  }
+  
