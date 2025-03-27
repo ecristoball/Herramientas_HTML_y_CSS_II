@@ -11,7 +11,7 @@ body {
   font-family: $font-family-sans-serif;
   /* stylelint-disable-next-line unit-disallowed-list */
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: $font-primary;
   background-color: $ec-bg;
 }
@@ -21,28 +21,27 @@ body {
   width: 90%;
   margin: auto;
   grid-template-columns: 1fr; // Móvil: una sola columna
-  gap: 10px;
+  gap: 1.1rem;
 
   @media (min-width: $mqMinWidth) {
     // Tablet y Desktop
     grid-template-columns: 1fr 2fr 1fr;
     font-size: 1.1rem;
     .ingredientes {
-      grid-column: 1; // PRIMERA columna (más ancha)
+      grid-column: 1; // primera columna
       align-items: start;
     }
     .elaboracion {
-      grid-column: 2; // Segunsda columna
+      grid-column: 2; // Segunda columna (más ancha)
     }
     .informacion {
       grid-column: 3; // tercera columna
     }
   }
-    
 }
 
 .container__borderbottom {
-  border-bottom: 1px solid #a8a5a5;
+  border-bottom: 0.1rem solid #a8a5a5;
 }
 
 .nombre,
@@ -50,10 +49,10 @@ body {
 .elaboracion,
 .iconos,
 .informacion {
-  padding: 0.5rem 0;
-  margin: 0.5rem;
   align-items: center;
   width: 90%;
+  margin: 0.5rem;
+  padding: 0.5rem 0;
   background-color: $container-white;
 }
 .nombre,
@@ -61,13 +60,14 @@ body {
   margin: auto;
 }
 .iconos {
+  font-size: 0.8rem;
   text-align: center;
-
+  @media (min-width: $mqMinWidth) {
+    font-size: 1.2rem;
+  }
 }
 .ingredientes__item {
-  margin-bottom: 8px;
-  
-  
+  margin-bottom: 0.5rem;
 }
 
 /* Elementos dentro de ingredientes__item */
@@ -92,39 +92,25 @@ body {
 }
 
 .seccion {
-  border-bottom: 1px solid rgb(76 76 76);
-
-  @media (min-width:$mqMinWidth) {
-    border-bottom: 0 solid rgb(76 76 76);
+  border-bottom: 0.1rem solid rgb(76 76 76);
+  @media (min-width: $mqMinWidth) {
+    border-bottom: 0;
   }
 }
 
 .elaboracion__imagen {
   display: block; /* Convierte la imagen en un bloque */
-  margin: 10px auto; /* Centra horizontalmente */
-  max-width: 90%; /* Evita que supere el ancho del contenedor */
   height: auto; /* Mantiene la proporción */
-  @media (min-width:$mqMinWidth) {
-    max-width: 70%; 
-  }
-}
-
-
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
+  margin: 1.1rem auto; /* Centra horizontalmente */
+  max-width: 90%; /* Evita que supere el ancho del contenedor */
 
   @media (min-width: $mqMinWidth) {
-    max-width: none;
+    max-width: 70%;
   }
 }
 
 .ec-title {
-   font-size: 2rem;
+  font-size: 2rem;
   line-height: 1.2;
   font-weight: 700;
   @media (min-width: $mqMinWidth) {
@@ -140,6 +126,7 @@ body {
 .receta-imagen {
   display: flex;
   justify-content: center; /* Centra horizontalmente */
+  padding-bottom: 1rem;
 }
 .receta-imagen img {
   width: 100%;
@@ -151,11 +138,11 @@ body {
 }
 
 @function dificultad-color($nivel) {
-  @if $nivel == 'facil' {
+  @if $nivel == "facil" {
     @return #28a745; // Verde
-  } @else if $nivel == 'media' {
-    @return #ffc107; // Amarillo
-  } @else if $nivel == 'dificil' {
+  } @else if $nivel == "media" {
+    @return #ff8707; // Amarillo
+  } @else if $nivel == "dificil" {
     @return #dc3545; // Rojo
   } @else {
     @return #6c757d; // Gris por defecto
@@ -165,5 +152,5 @@ body {
 // Se aplica la función en la dificultad de la receta.
 .dificultad {
   font-weight: bold;
-  color: dificultad-color('media');
+  color: dificultad-color("media");
 }

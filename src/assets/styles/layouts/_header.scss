@@ -1,23 +1,25 @@
 header {
   top: 0; /* Lo coloca en la parte superior */
   left: 0; /* Alinea a la izquierda */
+  display: block;
   justify-content: start; /* Distribuye los elementos */
+
   align-items: center; /* Alinea verticalmente los elementos */
+
   width: 100%; /* Ocupa todo el ancho */
   font-family: $font-family-sans-serif;
   /* comento pero lo pongo luego para desktop display: flex;*/
- 
-  color: $font-white; 
+
+  color: $font-white;
   background-color: $header-color;
 
   /* Para móviles (se apilan los elementos) */
-  display: block;
 
   @media (min-width: $mqMinWidth) {
     display: flex; /* Activa flexbox en tablet y desktop */
     justify-content: start; /* Alinea elementos a la izquierda */
     align-items: center; /* Centra verticalmente */
-    gap: 20px; /* Espacio entre logo y título */
+    gap: 1.1rem; /* Espacio entre logo y título */
   }
   .header__logoheader {
     width: 25%;
@@ -32,10 +34,10 @@ header {
   }
   .header__titulo {
     //align-items: left;
-    margin: 10px;
+    margin: 1.1rem;
     font-size: 1.6rem;
     color: #ffffff;
-    @media (min-width:  $mqMinWidth) {
+    @media (min-width: $mqMinWidth) {
       font-size: 3.6rem;
     }
   }
