@@ -1,78 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
     <title>UOC Boilerplate</title>
   </head>
-  
+
   <body>
-    
     <include src="./views/header.html"></include>
-    
+
     <main>
       <div class="nombre">
-        <h1 class="uoc-title">Pimientos de piquillo rellenos de bacalao</h1>
+        <h1 class="ec-title">Pimientos de piquillo rellenos de bacalao</h1>
         <p>by Eva Cristóbal</p>
       </div>
-      
-      <div class="bloque1">
-        <img src="./assets/images/images2.jpg" alt="pimientos rellenos"/>
+
+      <div class="receta-imagen">
+        <img src="./assets/images/images2.jpg" alt="pimientos rellenos" />
       </div>
       <div class="iconos seccion">
         <i class="fa-regular fa-clock"></i>
         45min
         <i class="fa-solid fa-users"></i>
         4Comensales
-        <span class="dificultad"> <i class="fa-solid fa-signal"></i>Dificultad:Media</span>
+        <span class="dificultad">
+          <i class="fa-solid fa-signal"></i>Dificultad:Media</span
+        >
       </div>
 
       <div class="container">
-      
-        
         <div class="ingredientes seccion">
           <h2 class="ingredientes__titulo">Ingredientes para 4 personas</h2>
           <ul class="ingredientes__lista">
             <li class="ingredientes__item ingredientes__item--destacado">
-              <span class="ingredientes__cantidad">250g </span> 
-              <span class="ingredientes__nombre">de bacalao desalado y desmigado</span>
+              <span class="ingredientes__cantidad">250g </span>
+              <span class="ingredientes__nombre"
+                >de bacalao desalado y desmigado</span
+              >
             </li>
             <li class="ingredientes__item ingredientes__item--destacado">
-              <span class="ingredientes__cantidad">12 </span> 
+              <span class="ingredientes__cantidad">12 </span>
               <span class="ingredientes__nombre">Pimientos del piquillo</span>
             </li>
             <li class="ingredientes__item">
-              <span class="ingredientes__cantidad">1 </span> 
-              <span class="ingredientes__nombre">Cebolla grande, picada finamente</span>
+              <span class="ingredientes__cantidad">1 </span>
+              <span class="ingredientes__nombre"
+                >Cebolla grande, picada finamente</span
+              >
             </li>
             <li class="ingredientes__item">
-              <span class="ingredientes__cantidad">2 </span> 
+              <span class="ingredientes__cantidad">2 </span>
               <span class="ingredientes__nombre">Dientes de ajo, picados</span>
             </li>
             <li class="ingredientes__item">
-              <span class="ingredientes__cantidad">1 </span> 
+              <span class="ingredientes__cantidad">1 </span>
               <span class="ingredientes__nombre">tomate maduro, rallado</span>
             </li>
             <li class="ingredientes__item">
-              <span class="ingredientes__cantidad">50ml </span> 
-              <span class="ingredientes__nombre">de aceite de oliva virgen extra</span>
+              <span class="ingredientes__cantidad">50ml </span>
+              <span class="ingredientes__nombre"
+                >de aceite de oliva virgen extra</span
+              >
             </li>
             <li class="ingredientes__item ingredientes__item--opcional">
-              <span class="ingredientes__cantidad">1 cucharada </span> 
-              <span class="ingredientes__nombre">de perejil fresco</span> (opcional)
+              <span class="ingredientes__cantidad">1 cucharada </span>
+              <span class="ingredientes__nombre">de perejil fresco</span>
+              (opcional)
             </li>
             <li class="ingredientes__item">
-              <span class="ingredientes__cantidad">50ml </span> 
+              <span class="ingredientes__cantidad">50ml </span>
               <span class="ingredientes__nombre">de vino blanco</span>
             </li>
             <li class="ingredientes__item">
-              <span class="ingredientes__cantidad">200ml </span> 
+              <span class="ingredientes__cantidad">200ml </span>
               <span class="ingredientes__nombre">de caldo de pescado</span>
             </li>
             <li class="ingredientes__item">
-            
               <span class="ingredientes__nombre">Sal y pimienta al gusto</span>
             </li>
             <li class="ingredientes__item">
@@ -80,82 +86,152 @@
             </li>
           </ul>
         </div>
-        
-        <div class="elaboracion">
+
+        <div class="elaboracion seccion">
           <h2 class="elaboracion__titulo">Elaboración</h2>
           <ol class="elaboracion__lista">
             <li class="elaboracion__paso">
-              <p>Para hacer el relleno ponemos el aceite en una sartén, añadimos la cebolla muy picada,
-                así como los ajos también picado muy menudo, dejamos cocinar todo durante diez minutos más o menos.</p>
-              <img class="elaboracion__imagen" src="./assets/images/paso1.jpg" alt="Pochar la cebolla">
+              <p>
+                Para hacer el relleno ponemos el aceite en una sartén, añadimos
+                la cebolla muy picada, así como los ajos también picado muy
+                menudo, dejamos cocinar todo durante diez minutos más o menos.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/paso1.jpg"
+                alt="Pochar la cebolla"
+              />
             </li>
             <li>
-              <p>Añadimos entonces los lomos de bacalao que habremos desalado, durante un día o dos,
-              dependiendo del grosor, cambiándole el agua frecuentemente y manteniéndolo siempre en la nevera.</p>
-              <img class="elaboracion__imagen" src="./assets/images/paso2.jpg" alt="Imagen del paso 1">
+              <p>
+                Añadimos entonces los lomos de bacalao que habremos desalado,
+                durante un día o dos, dependiendo del grosor, cambiándole el
+                agua frecuentemente y manteniéndolo siempre en la nevera.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/paso2.jpg"
+                alt="Imagen del paso 1"
+              />
             </li>
             <li>
-              <p>Segun se va cocinando el pescado lo vamos separando las lascas. 
-              Cuando deje de estar transparente añadimos la harina, removiendo bien para que se cocine durante unos minutos.</p>
-              <img class="elaboracion__imagen" src="./assets/images/paso3.jpg" alt="Añadimos harina">
+              <p>
+                Segun se va cocinando el pescado lo vamos separando las lascas.
+                Cuando deje de estar transparente añadimos la harina, removiendo
+                bien para que se cocine durante unos minutos.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/paso3.jpg"
+                alt="Añadimos harina"
+              />
             </li>
             <li>
-              <p>Seguidamente vamos añadiendo la leche para formar la bechamel. Cocemos sin dejar de remover 
-              hasta que espese, rectificamos de sal, retiramos y dejamos enfriar.</p>
-              <img class="elaboracion__imagen" src="./assets/images/paso5.jpg" alt="Hacemos la bechamel">
+              <p>
+                Seguidamente vamos añadiendo la leche para formar la bechamel.
+                Cocemos sin dejar de remover hasta que espese, rectificamos de
+                sal, retiramos y dejamos enfriar.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/paso5.jpg"
+                alt="Hacemos la bechamel"
+              />
               <p>Dejamos enfriar y reservamos.</p>
             </li>
             <li>
-              <p>Con la bechamel fría coloca todo el relleno en una manga pastelera y rellena cada pimiento. Puedes hacerlo con una cuchara,
-                 pero con la manga te resultará mucho más sencillo.</p>
-              <img class="elaboracion__imagen" src="./assets/images/paso6_2.jpg" alt="Hacemos la bechamel">
+              <p>
+                Con la bechamel fría coloca todo el relleno en una manga
+                pastelera y rellena cada pimiento. Puedes hacerlo con una
+                cuchara, pero con la manga te resultará mucho más sencillo.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/paso6_2.jpg"
+                alt="Hacemos la bechamel"
+              />
             </li>
             <li>
-              <p>Para la salsa, comenzaremos picando la cebolla y los ajos en el aceite. </p>
-              <img class="elaboracion__imagen" src="./assets/images/salsap0.jpg" alt="Hacemos la bechamel">
-              <p>Cuando ya está transparente añadimos los pimientos y salteamos todo junto durante cinco o seis
-              minutos. </p>
-              <img class="elaboracion__imagen" src="./assets/images/salsap1.jpg" alt="Hacemos la bechamel">
-              <p>Agregamos la nata líquida y dejamos reducir, trituramos con una batidora.</p>
-              <img class="elaboracion__imagen" src="./assets/images/salsap3.jpg" alt="Hacemos la bechamel">
-              <img class="elaboracion__imagen" src="./assets/images/salsap4.jpg" alt="Hacemos la bechamel">
+              <p>
+                Para la salsa, comenzaremos picando la cebolla y los ajos en el
+                aceite.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/salsap0.jpg"
+                alt="Hacemos la bechamel"
+              />
+              <p>
+                Cuando ya está transparente añadimos los pimientos y salteamos
+                todo junto durante cinco o seis minutos.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/salsap1.jpg"
+                alt="Hacemos la bechamel"
+              />
+              <p>
+                Agregamos la nata líquida y dejamos reducir, trituramos con una
+                batidora.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/salsap3.jpg"
+                alt="Hacemos la bechamel"
+              />
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/salsap4.jpg"
+                alt="Hacemos la bechamel"
+              />
             </li>
             <li>
-              <p>Cuando la salsa está hecha, colocamos los pimientos rellenos en una cazuela,
-              vertemos por encima la salsa y los horneamos durante 15 minutos a 180 grados.</p>
-              <img class="elaboracion__imagen" src="./assets/images/images1.jpg" alt="Hacemos la bechamel">
+              <p>
+                Cuando la salsa está hecha, colocamos los pimientos rellenos en
+                una cazuela, vertemos por encima la salsa y los horneamos
+                durante 15 minutos a 180 grados.
+              </p>
+              <img
+                class="elaboracion__imagen"
+                src="./assets/images/images1.jpg"
+                alt="Hacemos la bechamel"
+              />
             </li>
-          </ol>  
-        </div>   
-        <div class="introduccion seccion ">
+          </ol>
+        </div>
+        <div class="informacion">
           <h2 class="uoc-title">Sabías que....</h2>
           <p>
-          ... los pimientos del piquillo rellenos de bacalao son un plato clásico de la gastronomía 
-          española, y muy particularmente de Pamplona, que combina la dulzura de los pimientos 
-          asados con el sabor salado y delicado del bacalao. 
+            ... los pimientos del piquillo rellenos de bacalao son un plato
+            clásico de la gastronomía española, y muy particularmente de
+            Pamplona, que combina la dulzura de los pimientos asados con el
+            sabor salado y delicado del bacalao.
           </p>
           <p>
-          Esta receta, que se remonta a siglos atrás, ha perdurado en el tiempo como un símbolo de 
-          la rica tradición culinaria de España. 
+            Esta receta, que se remonta a siglos atrás, ha perdurado en el
+            tiempo como un símbolo de la rica tradición culinaria de España.
           </p>
           <p>
-          Los pimientos del piquillo son una variedad de pimientos rojos pequeños y dulces originarios
-          de la región de Navarra.
-          Su nombre proviene de la forma puntiaguda («piquillo» significa «puntiagudo» en español) que
-          adquieren al ser asados. 
-          Se dice que esta variedad de pimientos fue introducida en España por los jesuitas en el siglo XVI,
-          y desde entonces se ha convertido en un ingrediente emblemático de la cocina española. 
+            Los pimientos del piquillo son una variedad de pimientos rojos
+            pequeños y dulces originarios de la región de Navarra. Su nombre
+            proviene de la forma puntiaguda («piquillo» significa «puntiagudo»
+            en español) que adquieren al ser asados. Se dice que esta variedad
+            de pimientos fue introducida en España por los jesuitas en el siglo
+            XVI, y desde entonces se ha convertido en un ingrediente emblemático
+            de la cocina española.
           </p>
           <p>
-          Por otro lado, el bacalao es un pescado muy apreciado en la gastronomía española, 
-          especialmente en las regiones costeras del norte. Durante siglos, el bacalao seco y 
-          salado fue un alimento básico en la dieta de los españoles, ya que se podía conservar durante
-          largos períodos de tiempo sin necesidad de refrigeración.    
+            Por otro lado, el bacalao es un pescado muy apreciado en la
+            gastronomía española, especialmente en las regiones costeras del
+            norte. Durante siglos, el bacalao seco y salado fue un alimento
+            básico en la dieta de los españoles, ya que se podía conservar
+            durante largos períodos de tiempo sin necesidad de refrigeración.
           </p>
-          <p> 
-          La combinación de estos dos ingredientes, los pimientos del piquillo y el bacalao,
-          dio lugar a un plato que rápidamente se convirtió en un clásico de la cocina pamplonica, 
-          apreciado tanto en el ámbito doméstico como en los mejores restaurantes del país.
+          <p>
+            La combinación de estos dos ingredientes, los pimientos del piquillo
+            y el bacalao, dio lugar a un plato que rápidamente se convirtió en
+            un clásico de la cocina pamplonica, apreciado tanto en el ámbito
+            doméstico como en los mejores restaurantes del país.
           </p>
         </div>
         <!--
@@ -175,8 +251,8 @@
             -->
       </div>
       <include src="./views/footer.html"></include>
-      <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  
+      <script type="module" src="./assets/scripts/main.js"></script>
+      <!-- do not remove this line! -->
     </main>
   </body>
 </html>

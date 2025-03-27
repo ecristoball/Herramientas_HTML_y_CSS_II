@@ -1,14 +1,43 @@
 {
-   "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss"],
-   "plugins": ["stylelint-scss"],
-   "customSyntax": "postcss-scss",
-   "rules": {
-     "indentation": 2,
-     "number-leading-zero": "always",
-     "color-no-invalid-hex": true,
-      
-     "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$"
-   }
- }
- 
- 
+  "extends": ["stylelint-config-recommended"],
+  "plugins": ["stylelint-scss", "stylelint-order"],
+  "customSyntax": "postcss-scss",
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "color-no-invalid-hex": true,
+    "color-named": "never",
+    "color-function-notation": "modern",
+    "length-zero-no-unit": true,
+    "order/properties-order": [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "z-index",
+      "display",
+      "flex",
+      "justify-content",
+      "align-items",
+      "width",
+      "height",
+      "margin",
+      "padding",
+      "font-size",
+      "color",
+      "text-align",
+      "text-decoration",
+      "background-color",
+      "border",
+      "border-radius",
+      "opacity"
+    ],
+
+    
+
+
+    "selector-class-pattern": "^.[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$",
+    "unit-disallowed-list": ["px", "pt", "cm", "mm", "in", "pc"]
+  }
+}
