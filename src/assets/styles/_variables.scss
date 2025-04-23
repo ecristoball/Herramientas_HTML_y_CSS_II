@@ -8,9 +8,13 @@ $font-family-serif: "Georgia", "Times New Roman", serif;
 $uoc-corporate: #000078;
 $uoc-masterbrand: #ffff;
 $ec-bg: color.scale($uoc-masterbrand, $lightness: 70%);
-$header-color: rgb(7 0 74);
-$font-primary: #000078;
+$header-color: rgb(53, 156, 72);
+$font-primary: #3a7044;
 $font-white: #ffffff;
+$back-primary: #ffffff;
 $container-white: #ffffff;
 /* stylelint-disable-next-line unit-disallowed-list */
 $mqMinWidth: 768px;
+$theme-colors: (
+ "primary": #fabada
+);

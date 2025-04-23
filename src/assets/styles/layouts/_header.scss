@@ -2,43 +2,58 @@ header {
   top: 0; /* Lo coloca en la parte superior */
   left: 0; /* Alinea a la izquierda */
   display: block;
-  justify-content: start; /* Distribuye los elementos */
-
+  justify-content:space-between; /* Distribuye los elementos */
   align-items: center; /* Alinea verticalmente los elementos */
-
   width: 100%; /* Ocupa todo el ancho */
   font-family: $font-family-sans-serif;
-  /* comento pero lo pongo luego para desktop display: flex;*/
-
   color: $font-white;
   background-color: $header-color;
-
-  /* Para móviles (se apilan los elementos) */
-
+  
   @media (min-width: $mqMinWidth) {
     display: flex; /* Activa flexbox en tablet y desktop */
-    justify-content: start; /* Alinea elementos a la izquierda */
+    justify-content: space-between; /*uno a la izda y el otro a la drcha */
     align-items: center; /* Centra verticalmente */
-    gap: 1.1rem; /* Espacio entre logo y título */
+  
+  }
+  @media (min-width: 1024px) {
+    display: flex; /* Activa flexbox en tablet y desktop */
+    justify-content: space-between; /*uno a la izda y el otro a la drcha */
+    align-items: center; /* Centra verticalmente */
   }
   .header__logoheader {
-    width: 25%;
+    width: 20%;
+    height: 80%;
+    margin-left: 10px;;
     img {
       display: block;
-      width: 100%; /* Ajusta el ancho al contenedor */
-      height: auto; /* Mantiene las proporciones */
+      width: 75%; /* Ajusta el ancho al contenedor */
+      height: 100%; /* Mantiene las proporciones */
+      
     }
     @media (min-width: $mqMinWidth) {
-      width: 10%;
+      width: 20%;
     }
   }
-  .header__titulo {
-    //align-items: left;
-    margin: 1.1rem;
-    font-size: 1.6rem;
-    color: #ffffff;
-    @media (min-width: $mqMinWidth) {
-      font-size: 3.6rem;
+  .header__menu{
+    max-width: 100%;
+    margin-left:10px;
+  
+    ul {
+      display: flex;
+      justify-content: center; /* Centra los elementos en la línea */
+      list-style-type: none;
+      margin-bottom: 0;
+      padding: 0; /* Evita espacios extra en algunos navegadores */
+      gap: 0.9rem; /* Espacio entre elementos */
+      max-width: 100%;
+    }
+    ul li a {
+      text-decoration: none; /* Quita el subrayado de los enlaces */
+      color: $font-white;; /* Color opcional para los enlaces */
+      font-size: 3dvw;
+      @media (min-width: $mqMinWidth) {
+        font-size: 3dvw;
+      }
     }
   }
 }

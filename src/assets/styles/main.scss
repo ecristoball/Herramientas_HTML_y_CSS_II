@@ -14,7 +14,7 @@
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
-
+ @import "bootstrap/scss/bootstrap.scss";
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
@@ -24,6 +24,7 @@
  */
 
 @import "layouts/home";
+@import "layouts/index";
 @import "layouts/header";
 @import "layouts/footer";
 
