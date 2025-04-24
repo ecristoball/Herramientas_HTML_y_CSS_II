@@ -22,6 +22,7 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
+ @import "../../../node_modules/animate.css/animate.min.css";
 
 @import "layouts/home";
 @import "layouts/index";
