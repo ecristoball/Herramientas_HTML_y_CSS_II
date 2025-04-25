@@ -1,0 +1,25 @@
+.article {
+    font-family: 'Segoe UI', sans-serif;
+  
+    @container (min-width: 700px) {
+      
+    }
+  
+    // Estilo si el bloque tiene una imagen
+    article:has(img) {
+      background-color: #f9f9f9;
+    }
+  
+    // Aplica a títulos o párrafos dentro de article o section
+    :is(h1, p) {
+      color: #f80e0e;
+    }
+  }
+  @media (min-width: 768px) {
+    .fs-md-4 {
+      font-size: 1.5rem;
+    }
+    .fs-md-3 {
+      font-size: 1.75rem;
+    }
+  }

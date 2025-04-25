@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+  </head>
+
+  <body>
+    <include src="./views/header.html"></include>
+    <main>
+      <div class="congreso">
+        <div class="congreso__titulo">IX CONGRESO DE ECONOMÍA CIRCULAR</div>
+        <div class="congreso__slogan animate__animated animate__pulse animate__infinite">
+          Energía limpia para un mundo más verde.
+        </div>
+        <div class="congreso__imagen">
+          <img
+            src="./assets/images/sinfondo.jpg"
+            alt="Imagen economia circular"
+          />
+        </div>
+
+        <div class="congreso__icono">
+          <i class="fa-solid fa-circle-info"></i>
+        </div>
+
+        <div class="congreso__detalles">
+          <div class="congreso__edicion congreso__edicion--destacada">
+            2025 PAMPLONA
+          </div>
+          <ul class="detalles">
+            <li class="detalles__item detalles__item--destacado">
+              <span class="detalles__lugar"><i class="fa-solid fa-location-dot"></i> Navarra Arena
+              </span>
+            </li>
+            <li class="detalles__item detalles__item--destacado">
+              <span class="detalles__fecha"
+                ><i class="fa-regular fa-calendar-days"></i> 6 y 7
+                Noviembre</span
+              >
+            </li>
+            <li class="detalles__item">
+              <span class="detalles__inscripcion"
+                ><i class="fa-solid fa-ticket"></i> Entrada libre con
+                inscripción previa</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

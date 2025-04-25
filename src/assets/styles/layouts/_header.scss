@@ -2,42 +2,36 @@ header {
   top: 0; /* Lo coloca en la parte superior */
   left: 0; /* Alinea a la izquierda */
   display: block;
-  justify-content:space-between; /* Distribuye los elementos */
+  justify-content: space-between; /* Distribuye los elementos */
   align-items: center; /* Alinea verticalmente los elementos */
   width: 100%; /* Ocupa todo el ancho */
   font-family: $font-family-sans-serif;
   color: $font-white;
   background-color: $header-color;
-  
+
   @media (min-width: $mqMinWidth) {
     display: flex; /* Activa flexbox en tablet y desktop */
     justify-content: space-between; /*uno a la izda y el otro a la drcha */
     align-items: center; /* Centra verticalmente */
-  
   }
-  @media (min-width: 1024px) {
-    display: flex; /* Activa flexbox en tablet y desktop */
-    justify-content: space-between; /*uno a la izda y el otro a la drcha */
-    align-items: center; /* Centra verticalmente */
-  }
+
   .header__logoheader {
     width: 20%;
     height: 80%;
-    margin-left: 10px;;
+    margin-left: 10px;
     img {
       display: block;
       width: 75%; /* Ajusta el ancho al contenedor */
       height: 100%; /* Mantiene las proporciones */
-      
     }
     @media (min-width: $mqMinWidth) {
       width: 20%;
     }
   }
-  .header__menu{
+  .header__menu {
     max-width: 100%;
-    margin-left:10px;
-  
+    margin-left: 10px;
+
     ul {
       display: flex;
       justify-content: center; /* Centra los elementos en la línea */
@@ -49,7 +43,7 @@ header {
     }
     ul li a {
       text-decoration: none; /* Quita el subrayado de los enlaces */
-      color: $font-white;; /* Color opcional para los enlaces */
+      color: $font-white; /* Color opcional para los enlaces */
       font-size: 3dvw;
       @media (min-width: $mqMinWidth) {
         font-size: 3dvw;

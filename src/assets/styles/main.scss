@@ -14,7 +14,7 @@
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
- @import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap.scss";
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
@@ -22,10 +22,10 @@
  * Import layouts
  * It's a best practice to use a different partial for each page
  */
- @import "../../../node_modules/animate.css/animate.min.css";
+@import "../../../node_modules/animate.css/animate.min.css";
 
 @import "layouts/home";
-@import "layouts/index";
+@import "layouts/portada";
 @import "layouts/header";
 @import "layouts/footer";
 
