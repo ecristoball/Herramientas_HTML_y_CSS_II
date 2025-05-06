@@ -1,17 +1,42 @@
 <header>
-  <div class="header__logoheader">
-    <img src="./assets/images/logo_bl.jpg" alt="Logo pagnina web" />
-  </div>
-
-  <div class="header__menu">
-    <nav>
-      <ul>
-        <li><a href="index.html">Portada</a></li>
-        <li><a href="ponentes.html">Ponentes</a></li>
-        <li><a href="pagina3.html">pag4</a></li>
-        <li><a href="articulo.html">Artículo</a></li>
-        <li><a href="pagina5b.html">pag5b</a></li>
-      </ul>
-    </nav>
-  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light navbar-expand-lg  w-100">
+    <div class="container-fluid">
+      <!-- Logo -->
+      
+      <div class="articulo__imagen container mb-4 px-0">
+        <img
+          src="./assets/images/logo_bl.jpg"
+          class="img-fluid  img-max-20"
+          alt="Fotgrafía de personas reciclando"
+          />
+      </div>
+      <!-- Botón para móvil (cuando el menú se colapsa en pantallas pequeñas) -->
+      <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse"
+       data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+       aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     
+      <!-- Enlaces de navegación -->
+      <div class="collapse navbar-collapse ms-auto" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item fs-6 fs-md-1 fw-bold px-4 ">
+            <a class="nav-link " href="index.html">Portada</a>
+          </li>
+          <li class="nav-item fs-6 fs-md-2 px-4">
+            <a class="nav-link fs-6 fs-md-1 fw-bold " href="ponentes.html">Ponentes</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link fs-6 fs-md-1 fw-bold" href="articulo.html">Artículo</a>
+          </li>
+          <li class="nav-item px-4">
+            <a class="nav-link fs-6 fs-md-1 fw-bold " href="inscripcion.html">
+              Inscripcion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
+

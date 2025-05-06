@@ -1,10 +1,7 @@
 .article {
-    font-family: 'Segoe UI', sans-serif;
-  
-    @container (min-width: 700px) {
-      
-    }
-  
+    
+    //@import "bootstrap";
+   
     // Estilo si el bloque tiene una imagen
     article:has(img) {
       background-color: #f9f9f9;
@@ -12,14 +9,19 @@
   
     // Aplica a títulos o párrafos dentro de article o section
     :is(h1, p) {
-      color: #f80e0e;
+      color: #0ef854;
     }
-  }
-  @media (min-width: 768px) {
-    .fs-md-4 {
-      font-size: 1.5rem;
-    }
-    .fs-md-3 {
-      font-size: 1.85rem;
-    }
-  }
+    .tooltip-inner {
+        background-color: #0d6efd; /* azul Bootstrap primary */
+        color: #fff; /* texto blanco */
+      }
+      
+      .tooltip.bs-tooltip-right .tooltip-arrow::before {
+        border-right-color: #0d6efd;
+      }
+      .blockquote-footer {
+        background-color: #d0d010; /* color personalizado */
+        padding: 0.5rem;
+        border-radius: 0.25rem; /* opcional: bordes redondeados */
+      }
+}  

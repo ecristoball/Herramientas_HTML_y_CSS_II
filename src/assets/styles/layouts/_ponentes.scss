@@ -1,0 +1,80 @@
+/************pagina ponentes con Flexbox **/ /////////
+.ponentes {
+    display: flex; /* UsaFlexbox */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten cuando no hay suficiente espacio */
+    justify-content: center;
+    //justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    gap: 50px;
+    width: 90%;
+    margin: 40px auto;
+  }
+  
+  .ponente {
+    container-type: inline-size;
+    container-name: ponente;
+  
+    width: 90%;
+    text-align: center; /* Centra el contenido dentro de cada "participante" */
+    border: 2px solid red; /* Borde rojo de 2 píxeles */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 1rem;
+    @media (min-width: $mqMinWidth) {
+      max-width: 30%; /* Cada participante ocupará el 30% del ancho del contenedor */
+      /* Espacio entre los elementos */
+    }
+  
+  }
+  
+  .ponente__datos {
+    width: 90%;
+    border: 1px solid red;
+    margin: 5px auto;
+  }
+  
+  .imagen-ovalada {
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%; /* Hace forma de óvalo horizontal */
+    border: 2px solid #ccc; /* Opcional: añade un borde */
+    margin: 10px 0;
+  }
+  
+  .ponentes-title {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 3rem;
+  }
+  
+  /* Container query */
+  @container (min-width: 300px) {
+    .imagen-ovalada {
+      max-width: 120px;
+      height: 120px;
+      margin: 0;
+    }
+  
+    .ponente__datos {
+      border: 1px solid rgb(43, 255, 0);
+      width: 75%;
+    }
+  }
+  /********* PEC2 comun*//////
+  
+  :is(h1, h2, h3) {
+    color: red;
+  }
+  /*
+  ol.list-group-numbered li:has(strong) {
+    background-color: rgba(243, 9, 9, 0.856)!important; // Un pequeño contraste
+    
+  }*/
+  article:has(blockquote) blockquote {
+    border-left: 4px solid rgb(128, 26, 0);
+    padding-left: 1rem;
+    margin-left: 0;
+  }
+  .verde-personalizado {
+    background-color: #123456;
+  }

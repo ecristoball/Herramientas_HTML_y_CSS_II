@@ -53,4 +53,9 @@ footer {
     align-items: center; /* Centra verticalmente */
     gap: 1.3rem; /* Espacio entre logo y título */
   }
+  .img-max-20 {
+    max-width: 30%;
+    height: auto;
+  }
+  
 }

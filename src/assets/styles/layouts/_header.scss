@@ -6,7 +6,7 @@ header {
   align-items: center; /* Alinea verticalmente los elementos */
   width: 100%; /* Ocupa todo el ancho */
   font-family: $font-family-sans-serif;
-  color: $font-white;
+  //color: $font-white;
   background-color: $header-color;
 
   @media (min-width: $mqMinWidth) {
@@ -43,11 +43,18 @@ header {
     }
     ul li a {
       text-decoration: none; /* Quita el subrayado de los enlaces */
-      color: $font-white; /* Color opcional para los enlaces */
+      //color: $font-white; /* Color opcional para los enlaces */
       font-size: 3dvw;
       @media (min-width: $mqMinWidth) {
         font-size: 3dvw;
       }
     }
   }
+
+//con bootsrap
+.img-max-20 {
+  max-width: 20%;
+  height: auto;
+}
+
 }

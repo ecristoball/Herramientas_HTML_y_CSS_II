@@ -6,99 +6,202 @@
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
-    <title>Ponentes</title>
+     
   </head>
 
   <body>
     <include src="./views/header.html"></include>
 
     <main>
+      <nav aria-label="ubicacion breadcrumb ">
+        <ol class="ubicacion__listado breadcrumb fs-6 fs-md-4 mt-4 ">
+          <li class="ubicacion__listado-item breadcrumb-item "><a href="./index.html">Home</a></li>
+          <li class="ubicacion__listado-item breadcrumb-item active" aria-current="page">Ponentes</li>
+        </ol>
+      </nav>
       <h1 class="ponentes-title">PONENTES</h1>
       <section class="ponentes">
         <div class="ponente">
           <img
             src="./assets/images/ponente1.jpg"
             class="imagen-ovalada"
-            alt="Ponente 1"
+            alt="foto de María González Mayor"
           />
           <div class="ponente__datos">
-            <h3>María González Mayor</h3>
-            <p>
+            <h3 class="ponente__nombre">María González Mayor</h3>
+            <p  class="ponente__cargo">
               Directora General de Estrategia Digital en la Agencia Digital de
               Andalucía. Junta de Andalucía.
             </p>
+            <div class="ponente__ponencia">
+              <p  class="ponente__ponencia-etiqueta">
+                <strong>PONENCIA:</strong>
+              </p>
+              <p  class="ponente__ponencia-titulo">
+               Estrategia Digital en Economía Circular
+              </p>
+              <p  class="ponente__ponencia-fecha">
+                6 de noviembre 9:30 a  13:00
+              </p>
+              <p  class="ponente__ponencia-sala">
+                Sala 3
+              </p>
+            </div>
           </div>
         </div>
+
         <div class="ponente">
           <img
             src="./assets/images/ponente2.jpg"
             class="imagen-ovalada"
-            alt="Ponente 2"
+            alt="foto de Mikel López Quintana"
           />
           <div class="ponente__datos">
-            <h3>Mikel López Quintana</h3>
-            <p>
+            <h3 class="ponente__nombre">Mikel López Quintana</h3>
+            <p  class="ponente__cargo">
               Analista de políticas en la Unidad de Gobernanza del Agua,
               Economía Azul y Circular, dentro de la División de Ciudades y
               Desarrollo Sostenible de la Organización para la Cooperación y el
               Desarrollo Económicos (OCDE)
             </p>
+            <div class="ponente__ponencia">
+              <p  class="ponente__ponencia-etiqueta">
+                <strong>PONENCIA:</strong>
+              </p>
+              <p  class="ponente__ponencia-titulo">
+               Economia Azul y Circular
+              </p>
+              <p  class="ponente__ponencia-fecha">
+                6 de noviembre 9:30 a  13:00
+              </p>
+              <p  class="ponente__ponencia-sala">
+                Sala 1
+              </p>
+            </div>
           </div>
         </div>
+
         <div class="ponente">
           <img
             src="./assets/images/ponente9.jpg"
             class="imagen-ovalada"
-            alt="Ponente 3"
+            alt="foto de >Miguel Santana Almanzor"
           />
-          <h3>Miguel Santana Almanzor</h3>
-          <p>
-            Responsable de Capital Natural y Economía Circular - Departamento de
-            Territorio, Vivienda y Transición Ecológica - Generalitat de
-            Catalunya
-          </p>
+          <div class="ponente__datos">
+            <h3 class="ponente__nombre">Miguel Santana Almanzor</h3>
+            <p  class="ponente__cargo">
+              Responsable de Capital Natural y Economía Circular - Departamento de
+              Territorio, Vivienda y Transición Ecológica - Generalitat de
+              Catalunya
+            </p>
+            <div class="ponente__ponencia">
+              <p  class="ponente__ponencia-etiqueta">
+                <strong>PONENCIA:</strong>
+              </p>
+              <p  class="ponente__ponencia-titulo">
+               Economía Circular en Vivienda
+              </p>
+            <p  class="ponente__ponencia-fecha">
+              6 de noviembre 15:00 a  17:00
+            </p>
+            <p  class="ponente__ponencia-sala">
+              Sala 3
+            </p>
+            </div>
+          </div>
         </div>
+
         <div class="ponente">
           <img
             src="./assets/images/ponente6.jpg"
             class="imagen-ovalada"
-            alt="Ponente 1"
+            alt="foto de Jesús Martinez Del Castillo"
           />
-          <h3>Jesús Martinez Del Castillo</h3>
-          <p>
-            Viceconsejero de Medio Ambiente del Departamento de Industria,
-            Transición Energética y Sostenibilidad. Gobierno Vasco
-          </p>
+          <div class="ponente__datos">
+            <h3 class="ponente__nombre">Jesús Martinez Del Castillo</h3>
+            <p  class="ponente__cargo">
+              Viceconsejero de Medio Ambiente del Departamento de Industria,
+              Transición Energética y Sostenibilidad. Gobierno Vasco
+            </p>
+            <div class="ponente__ponencia">
+              <p  class="ponente__ponencia-etiqueta">
+                <strong>PONENCIA:</strong>
+              </p>
+              <p  class="ponente__ponencia-titulo">
+                Economía Circular y Sostenibilidad
+              </p>
+              <p  class="ponente__ponencia-fecha">
+                6 de noviembre 15:00 a  17:00
+              </p>
+              <p  class="ponente__ponencia-sala">
+                Sala 1
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class="ponente">
           <img
             src="./assets/images/ponente7.jpg"
             class="imagen-ovalada"
-            alt="Ponente 2"
+            alt="foto de Sara Aguado García"
           />
-          <h3>Sara Aguado García</h3>
-          <p>
-            Técnico de economía circular en Ihobe, Sociedad Pública de Gestión
-            Ambiental del Gobierno Vasco
-          </p>
+          <div class="ponente__datos">
+            <h3 class="ponente__nombre">Sara Aguado García</h3>
+            <p  class="ponente__cargo">
+              Técnico de economía circular en Ihobe, Sociedad Pública de Gestión
+              Ambiental del Gobierno Vasco
+            </p>
+            <div class="ponente__ponencia">
+              <p  class="ponente__ponencia-etiqueta">
+                <strong>PONENCIA:</strong>
+              </p>
+              <p  class="ponente__ponencia-titulo">
+                Economía Circular y Medioambiental
+              </p>
+              <p  class="ponente__ponencia-fecha">
+                7 de noviembre 9:30 a  13:00
+              </p>
+              <p  class="ponente__ponencia-sala">
+                Sala 1
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class="ponente">
           <img
             src="./assets/images/ponente10.jpg"
             class="imagen-ovalada"
-            alt="Ponente 3"
+            alt="foto de Daniel Osorio Diaz de Cerio"
           />
           <div class="ponente__datos">
-            <h3>Daniel Osorio Diaz de Cerio</h3>
-            <p>
+            <h3 class="ponente__nombre">Daniel Osorio Diaz de Cerio</h3>
+            <p  class="ponente__cargo">
               Director General de Consumo del Ministerio de Derechos Sociales,
               Consumo y Agenda 2030. Gobierno de España
             </p>
+            <div class="ponente__ponencia">
+              <p  class="ponente__ponencia-etiqueta">
+                <strong>PONENCIA:</strong>
+              </p>
+              <p  class="ponente__ponencia-titulo">
+               Economía Circular y Derecho
+              </p>
+              <p  class="ponente__ponencia-fecha">
+                7 de noviembre 9:30 a  13:00
+              </p>
+              <p  class="ponente__ponencia-sala">
+                Sala 3
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </main>
+
     <include src="./views/footer.html"></include>
+
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
   </body>

@@ -21,7 +21,7 @@
  @import "bootstrap/scss/mixins";
  @import "bootstrap/scss/utilities";
  
- // ACTIVA font-size con breakpoints
+ // ACTIVAr font-size con breakpoints
  $utilities: map-merge(
    $utilities,
    (
@@ -34,7 +34,7 @@
    )
  );
  
- // Luego importa Bootstrap
+ //  importar Bootstrap
  @import "bootstrap/scss/bootstrap";
 
 
@@ -48,10 +48,12 @@
  */
 @import "../../../node_modules/animate.css/animate.min.css";
 
-@import "layouts/home";
+@import "layouts/index";
 @import "layouts/portada";
 @import "layouts/header";
 @import "layouts/footer";
+@import "layouts/inscripcion";
+@import "layouts/ponentes";
 
 /**
  * Do NOT include anything else in this file!

@@ -1,0 +1,202 @@
+<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    
+  </head>
+
+  <body >
+    <include src="./views/header.html"></include>
+
+    <main class="formulario body-bg body-color">
+      
+      <div class="formulario__contenedro container">
+        <nav aria-label="ubicacion breadcrumb ">
+          <ol class="ubicacion__listado breadcrumb fs-6 fs-md-4 mt-4 ">
+            <li class="ubicacion__listado-item breadcrumb-item "><a href="./index.html">Home</a></li>
+            <li class="ubicacion__listado-item breadcrumb-item active" aria-current="page">Inscripcion</li>
+          </ol>
+        </nav>
+        <form class="formulario__formulario mx-auto mb-4 mt-4">
+          <section class=" formulario__introduccion ">
+            <p class="formulario__titulo fs-3 fs-md-1 mb-4 mt-4 lh-base pb-4 fw-bold">
+              ¿Quieres participar en las jorandas sobre economía circular? 
+            </p>
+            <p class="formulario__subtitulo fs-3 fs-md-2 lh-base  mb-5 mt-4 pb-4">
+              Rellena este sencillo formulario y guarada el QR que recibirás en el mail de confirmación.
+              Este QR te servirá para acceder al recinto y participar en las jornadas.
+            </p>
+          </section>
+
+        <h2 class="formulario__subseccion fs-4">Datos personales</h2>
+        <section class="formulario__datos-personales mb-4 border border-dark p-4">
+          <div class="row  ">
+            <!-- nombre -->
+            <div class="formulario__campo col-12 col-md-5 mb-4">
+              <label for="input-nombre" class="formulario__label form-label ">Nombre</label>
+              <input type="text" class="formulario__input form-control" id="input-nombre" placeholder="Introduce tu nombre" >
+            </div>
+            <!-- Apellidos -->
+            <div class="formulario__campo col-12 col-md-7 mb-4">
+              <label for="input-apellidos" class="form-lab formulario__label">Apellidos</label>
+              <input type="text" class="form-control" id="formulario__input input-apellido" placeholder="Introduce tus Apellidos" >
+            </div>
+          </div>
+           <!-- DNI -->
+           <div class="formulario__campo col-12 col-md-4 mb-4">
+            <label for="input-dni" class="formulario__label form-label ">DNI *</label>
+            <input type="text" class="form-control" id="formulario__input input-dni" 
+            placeholder="12345678X" required pattern="^\d{8}[A-Za-z]$">
+          </div>
+          <div class="row">
+            <!-- email -->
+            <div class="formulario__campo col-12 col-md-6 mb-4">
+              <label for="input-mail" class="formulario__label form-label">Email address</label>
+              <input type="email" class="form-control" id="formulario__input input-mail" 
+              aria-describedby="emailHelp" required>
+              <div id="emailHelp" class="form-text">We'll never share your email 
+                with anyone else.</div>  
+            </div>
+            <div class="formulario__campo col-12 col-md-6 mb-4">
+              <label for="input-telefono" class="formulario__label form-label">
+                Número de teléfono</label>
+              <input type="email" class="form-control" id="formulario__input input-telefono" >
+            </div>
+          </div>
+        </section>
+        <h2 class="formulario__subseccion-titulo fs-4">Datos de empresa</h2>
+        <section class="formulario__datos-empresa  mb-4 mt-4 border border-dark p-4">
+          <div class="row">
+            <div class="formulario__campo col-12 col-md-6 mb-5">
+              <label for="exampleInputCompany" class="formulario__label form-label ">Empresa</label>
+              <input type="text" class="formulario__input form-control" id="exampleInputCompany" placeholder="Introduce el nombre de tu empresa" required>
+            </div>
+            <!-- cargo -->
+            <div class="formulario__campo col-12 col-md-6 mb-5">
+              <label for="exampleInputPosition" class="formulario__label form-label ">Cargo</label>
+              <select class="formulario__select form-select" id="exampleInputPosition" name="position" required">
+                <option selected>Indica tu cargo en la empresa </option>
+                <option value="1">CEO</option>
+                <option value="2">CTO</option>
+                <option value="3">Responsble de cuenta</option>
+                <option value="4">Probgramador</option>
+                <option value="5">Compras</option>
+                <option value="6">Contable</option>
+                <option value="7">Otros</option>
+              </select>
+            </div>
+            
+          </div>
+        
+          <div class="row">
+            <!-- nombre -->
+            <div class="formulario__campo col-12 col-md-4 mb-5">
+              <label for="input-ciudad" class="formulario__label form-label ">Ciudad</label>
+              <input type="text" class="formulario__input form-control" id="input-ciudad" placeholder="Introduce tu nombre" required>
+            </div>
+            <!-- Apellidos -->
+            <div class="formulario__campo col-12 col-md-4 mb-5">
+              <label for="input-provincia" class="formulario__label form-label ">Provincia</label>
+              <input type="text" class="formulario__input form-control" id="input-provincia" placeholder="Introduce tus Apellidos" required>
+            </div>
+            <div class="formulario__campo col-12 col-md-4 mb-5">
+              <label for="input-pais" class="formulario__label form-label ">País</label>
+              <input type="text" class="formulario__input form-control" id="input-pais" placeholder="Introduce tus Apellidos" required>
+            </div>
+          </div>
+          <div class="formulario__campo col-12 col-md-12 mb-5">
+            <label for="input-descripcion" class="formulario__label form-label ">¿A qué se dedica tu empresa?</label>
+            <input type="text" class="formulario__input form-control" id="input-descripcion" placeholder="Introduce tu nombre" >
+          </div>
+        </section>
+        <h2 class="formulario__subseccion-titulo fs-4">Datos sobre las jornadas</h2>
+        <section class="formulario__datos-jornadas border border-dark p-4  mb-4 mt-4 b">
+          <label for="input-modalidad" class="formulario__label form-label ">Modalidad de asistencia</label>
+              <select class="formulario__select form-select form-select" id="input-modalidad" name="modalidad" required>
+                <option selected>Por favor complete </option>
+                <option value="1">Presencial</option>
+                <option value="2">Telemática</option>
+               
+              </select>
+          <div class="row">
+          
+            <label for="input-conferencias" class="formulario__label form-label mb-2 mt-4">Indica las ponencias  a las que deseas asistir. Revisa los horarios para que las jornadas seleccionadas no coinicdan.</label>
+            <div class="formulario__checkbox col-12 col-md-6 mb-2">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" >
+                <label class="form-check-label" for="inlineCheckbox1">Estrategia Digital en Economía Circular</label>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2" >
+              <label class="form-check-label" for="inlineCheckbox2">Economia Azul y Circular</label>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Economía Circular en Vivienda</label>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Economía Circular y Sostenibilidad</label>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1">Economía Circular y Medioambiental</label>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2">Economía Circular y Derecho</label>
+            </div>
+            </div>
+</div>
+          <div class="mb-3">
+  <label class="form-label">¿Asistirás presencialmente al evento de bienvenida?</label><br>
+  
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="asistenciaBienvenida" id="asistenciaSi" value="si" required>
+    <label class="form-check-label" for="asistenciaSi">Sí</label>
+  </div>
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="asistenciaBienvenida" id="asistenciaNo" value="no" required>
+    <label class="form-check-label" for="asistenciaNo">No</label>
+  </div>
+</div>
+
+        </section> 
+       
+      
+          <!-- Checkbox -->
+          <div class="formulario__confirmacion mb-3 form-check">
+            <input type="checkbox" class="formulario__checkbox form-check-input" id="politica" required>
+            <label class="formulario__label form-check-label" for="politica">Acepto la política de privacidad</label>
+          </div>
+
+          <div class="formulario__confirmacion mb-3 form-check">
+            <input type="checkbox" class="formulario__checkbox form-check-input" id="info-comercial" required>
+            <label class="formulario__label form-check-label" for="info-comercial">Acepto recibir información comercial</label>
+          </div>
+
+          <button type="submit" class="formulario__boton btn btn-primary">Enviar</button>
+        </form>
+      </div>
+      
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>
