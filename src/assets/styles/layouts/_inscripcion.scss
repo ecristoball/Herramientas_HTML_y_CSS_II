@@ -43,11 +43,7 @@ form {
   
   }
 
-  :is(h2) {
-    margin-bottom: 1.5rem;
-    font-size:1.7rem;
-   color:rgb(38, 0, 255);
-  }
+ 
   input:invalid,
   select:invalid,
   textarea:invalid {

@@ -1,69 +1,110 @@
+.no-js {
+  .collapse {
+    display: block !important; // Muestra el menú por defecto
+  }
+
+  .navbar-toggler {
+    display: none !important; // Oculta el botón de toggle
+  }
+}
+
+// Estilos normales (para navegadores modernos con JS)
+@supports (display: flex) {
+  .collapse {
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
+}
+
 /************pagina ponentes con Flexbox **/ /////////
 .ponentes {
-    display: flex; /* UsaFlexbox */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten cuando no hay suficiente espacio */
-    justify-content: center;
-    //justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    gap: 50px;
-    width: 90%;
-    margin: 40px auto;
+  display: flex; /* UsaFlexbox */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten cuando no hay suficiente espacio */
+  justify-content: center;
+  //justify-content: space-between; /* Distribuye el espacio entre los elementos */
+  gap: 6rem;
+  width: 90%;
+  margin: 3rem auto;
+  /* Container query */
+  container-type: inline-size;
+  container-name: ponentes;
+
+  :is(h1, h2, h3) {
+    color: red;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+   
   }
-  
+ 
+
   .ponente {
+    /* Container query */
     container-type: inline-size;
     container-name: ponente;
-  
+    //moviles
+    
     width: 90%;
     text-align: center; /* Centra el contenido dentro de cada "participante" */
-    border: 2px solid red; /* Borde rojo de 2 píxeles */
-    border-radius: 30px; /* Bordes redondeados */
+    border: 0.5rem solid #3a7044; 
+    border-radius: 2rem; /* Bordes redondeados */
     padding: 1rem;
-    @media (min-width: $mqMinWidth) {
+    
+    //dispositivos grandes- 3 columnas 
+    @container ponentes (min-width:#{$mqMinWidth}) {
+      max-width: 45%; /* Cada participante ocupará el 30% del ancho del contenedor */
+      /* Espacio entre los elementos */
+     
+    }
+    @container ponentes (min-width:#{$cqMinWidthPonente}) {
       max-width: 30%; /* Cada participante ocupará el 30% del ancho del contenedor */
       /* Espacio entre los elementos */
+     
     }
-  
+   
+    .imagen-ovalada {
+      max-width: 40%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%; /* Hace forma de óvalo horizontal */
+      margin: 1rem 0;
+
+      @container ponente (min-width: 400px) {
+        max-width: 30%;
+        height:auto;
+      }
+    }
+
+    .ponente__datos {
+      width: 80%;
+      margin: 0.5rem auto;
+      font-size: 3rem;  
+      line-height: 150%;   
+      
+      @supports (font-size: 1cqw) {
+       font-size: 5cqw;
+      }
+    }
   }
+}  
+.ponentes__title {
+  text-align: center;
+}
   
-  .ponente__datos {
-    width: 90%;
-    border: 1px solid red;
-    margin: 5px auto;
-  }
-  
-  .imagen-ovalada {
-    max-width: 30%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 50%; /* Hace forma de óvalo horizontal */
-    border: 2px solid #ccc; /* Opcional: añade un borde */
-    margin: 10px 0;
-  }
-  
-  .ponentes-title {
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    font-size: 3rem;
-  }
+ 
   
   /* Container query */
-  @container (min-width: 300px) {
-    .imagen-ovalada {
-      max-width: 120px;
-      height: 120px;
-      margin: 0;
-    }
-  
-    .ponente__datos {
-      border: 1px solid rgb(43, 255, 0);
-      width: 75%;
-    }
-  }
+ 
   /********* PEC2 comun*//////
   
   :is(h1, h2, h3) {
     color: red;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
   }
   /*
   ol.list-group-numbered li:has(strong) {

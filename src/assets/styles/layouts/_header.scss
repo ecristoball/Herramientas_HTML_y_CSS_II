@@ -1,4 +1,7 @@
+
 header {
+  
+  
   top: 0; /* Lo coloca en la parte superior */
   left: 0; /* Alinea a la izquierda */
   display: block;
@@ -10,7 +13,7 @@ header {
   background-color: $header-color;
 
   @media (min-width: $mqMinWidth) {
-    display: flex; /* Activa flexbox en tablet y desktop */
+    display: flex; 
     justify-content: space-between; /*uno a la izda y el otro a la drcha */
     align-items: center; /* Centra verticalmente */
   }
