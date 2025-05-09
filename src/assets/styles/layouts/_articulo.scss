@@ -1,23 +1,39 @@
-.article {
-    
-    //@import "bootstrap";
-   
+article {
+    color:rgb(215, 197, 197);
+        //@import "bootstrap";
     // Estilo si el bloque tiene una imagen
+    :is(h1, h2, h3) {
+        color: #3a7044;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+       
+      }
     article:has(img) {
       background-color: #f9f9f9;
     }
-  
+    p:has(img) {
+        text-align: center;
+        font-style: italic;
+      }
     // Aplica a títulos o párrafos dentro de article o section
-    :is(h1, p) {
-      color: #0ef854;
-    }
+   
+    /*figure:has(figcaption) {
+        border: 4px solid red;
+        padding: 1rem;
+        background-color: #3477ba;
+      }*/
+    article :is(ul, ol) {
+        padding-left: 2rem;
+      }
+
     .tooltip-inner {
         background-color: #0d6efd; /* azul Bootstrap primary */
-        color: #fff; /* texto blanco */
+        color: #ef2e2e; /* texto blanco */
       }
       
       .tooltip.bs-tooltip-right .tooltip-arrow::before {
-        border-right-color: #0d6efd;
+        border-right-color: #fd0db1;
       }
       .blockquote-footer {
         background-color: #d0d010; /* color personalizado */

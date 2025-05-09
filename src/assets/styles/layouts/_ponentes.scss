@@ -21,23 +21,15 @@
 
 /************pagina ponentes con Flexbox **/ /////////
 .ponentes {
+  container-type: inline-size;
+  container-name: ponentes;
   display: flex; /* UsaFlexbox */
   flex-wrap: wrap; /* Permite que los elementos se ajusten cuando no hay suficiente espacio */
   justify-content: center;
-  //justify-content: space-between; /* Distribuye el espacio entre los elementos */
   gap: 6rem;
   width: 90%;
   margin: 3rem auto;
   /* Container query */
-  container-type: inline-size;
-  container-name: ponentes;
-
-  :is(h1, h2, h3) {
-    color: red;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-   
-  }
  
 
   .ponente {
@@ -47,21 +39,18 @@
     //moviles
     
     width: 90%;
+    padding: 1rem;
     text-align: center; /* Centra el contenido dentro de cada "participante" */
     border: 0.5rem solid #3a7044; 
     border-radius: 2rem; /* Bordes redondeados */
-    padding: 1rem;
-    
+   
     //dispositivos grandes- 3 columnas 
     @container ponentes (min-width:#{$mqMinWidth}) {
-      max-width: 45%; /* Cada participante ocupará el 30% del ancho del contenedor */
-      /* Espacio entre los elementos */
-     
+      max-width: 45%; /* Cada participante ocupará el 45% del ancho del contenedor */
     }
-    @container ponentes (min-width:#{$cqMinWidthPonente}) {
+
+    @container ponentes (min-width:#{$cqMinWidthDesktop}) {
       max-width: 30%; /* Cada participante ocupará el 30% del ancho del contenedor */
-      /* Espacio entre los elementos */
-     
     }
    
     .imagen-ovalada {
@@ -99,13 +88,7 @@
  
   /********* PEC2 comun*//////
   
-  :is(h1, h2, h3) {
-    color: red;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-   
-  }
+  
   /*
   ol.list-group-numbered li:has(strong) {
     background-color: rgba(243, 9, 9, 0.856)!important; // Un pequeño contraste

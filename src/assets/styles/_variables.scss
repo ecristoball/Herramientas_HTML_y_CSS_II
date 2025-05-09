@@ -13,7 +13,7 @@ $container-white: #ffffff;
 /* stylelint-disable-next-line unit-disallowed-list */
 $mqMinWidth: 768px;
 $cqMinWidth: 600px;
-$cqMinWidthPonente: 1400px;
+$cqMinWidthDesktop: 1400px;
 
 $theme-colors: (
   "primary": #f8ffe5,
@@ -21,8 +21,8 @@ $theme-colors: (
   
 );
 
-//$body-color: rgb(77, 32, 223); // Color verde
-$body-bg: #f8ffe5;
+$body-color: #3a7044;//letra oficial 
+$body-bg: #f8ffe5;// fondo oficial
 $footer-bg:$header-color;
 
 

@@ -1,3 +1,23 @@
+.no-js {
+  .collapse {
+    display: block !important; // Muestra el menú por defecto
+  }
+
+  .navbar-toggler {
+    display: none !important; // Oculta el botón de toggle
+  }
+}
+
+// Estilos normales (para navegadores modernos con JS)
+@supports (display: flex) {
+  .collapse {
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
+}
 
 header {
   

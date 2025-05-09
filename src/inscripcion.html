@@ -21,7 +21,8 @@
             <li class="ubicacion__listado-item breadcrumb-item active" aria-current="page">Inscripcion</li>
           </ol>
         </nav>
-        <form class="formulario__formulario mx-auto mb-4 mt-4">
+
+        <form name="inscripcion" method="POST" data-netlify="true" class="formulario__formulario mx-auto mb-4 mt-4">
           <section class=" formulario__introduccion ">
             <p class="formulario__titulo fs-3 fs-md-1 mb-4 mt-4 lh-base pb-4 fw-bold">
               ¿Quieres participar en las jorandas sobre economía circular? 
@@ -38,25 +39,25 @@
             <!-- nombre -->
             <div class="formulario__campo col-12 col-md-5 mb-4">
               <label for="input-nombre" class="formulario__label form-label ">Nombre</label>
-              <input type="text" class="formulario__input form-control" id="input-nombre" placeholder="Introduce tu nombre" >
+              <input type="text" name="nombre" class="formulario__input form-control" id="input-nombre" placeholder="Introduce tu nombre" >
             </div>
             <!-- Apellidos -->
             <div class="formulario__campo col-12 col-md-7 mb-4">
               <label for="input-apellidos" class="form-lab formulario__label">Apellidos</label>
-              <input type="text" class="form-control" id="formulario__input input-apellido" placeholder="Introduce tus Apellidos" >
+              <input type="text"  name="apellidos" class="form-control" id="formulario__input input-apellido" placeholder="Introduce tus Apellidos" >
             </div>
           </div>
            <!-- DNI -->
            <div class="formulario__campo col-12 col-md-4 mb-4">
             <label for="input-dni" class="formulario__label form-label ">DNI *</label>
-            <input type="text" class="form-control" id="formulario__input input-dni" 
+            <input type="text"  name="dni" class="form-control" id="formulario__input input-dni" 
             placeholder="12345678X" required pattern="^\d{8}[A-Za-z]$">
           </div>
           <div class="row">
             <!-- email -->
             <div class="formulario__campo col-12 col-md-6 mb-4">
               <label for="input-mail" class="formulario__label form-label">Email address</label>
-              <input type="email" class="form-control" id="formulario__input input-mail" 
+              <input type="mail"  name="mail" class="form-control" id="formulario__input input-mail" 
               aria-describedby="emailHelp" required>
               <div id="emailHelp" class="form-text">We'll never share your email 
                 with anyone else.</div>  
@@ -64,7 +65,7 @@
             <div class="formulario__campo col-12 col-md-6 mb-4">
               <label for="input-telefono" class="formulario__label form-label">
                 Número de teléfono</label>
-              <input type="email" class="form-control" id="formulario__input input-telefono" >
+              <input type="telefono"  name="telefono" class="form-control" id="formulario__input input-telefono" >
             </div>
           </div>
         </section>
@@ -72,13 +73,13 @@
         <section class="formulario__datos-empresa  mb-4 mt-4 border border-dark p-4">
           <div class="row">
             <div class="formulario__campo col-12 col-md-6 mb-5">
-              <label for="exampleInputCompany" class="formulario__label form-label ">Empresa</label>
-              <input type="text" class="formulario__input form-control" id="exampleInputCompany" placeholder="Introduce el nombre de tu empresa" required>
+              <label for="input-empresa" class="formulario__label form-label ">Empresa</label>
+              <input type="empresa"  name="empresa" class="formulario__input form-control" id="input-empresa" placeholder="Introduce el nombre de tu empresa" required>
             </div>
             <!-- cargo -->
             <div class="formulario__campo col-12 col-md-6 mb-5">
               <label for="exampleInputPosition" class="formulario__label form-label ">Cargo</label>
-              <select class="formulario__select form-select" id="exampleInputPosition" name="position" required">
+              <select  name="cargo" class="formulario__select form-select" id="cargo" name="position" required>
                 <option selected>Indica tu cargo en la empresa </option>
                 <option value="1">CEO</option>
                 <option value="2">CTO</option>
@@ -93,24 +94,24 @@
           </div>
         
           <div class="row">
-            <!-- nombre -->
+            <!-- ciudad -->
             <div class="formulario__campo col-12 col-md-4 mb-5">
               <label for="input-ciudad" class="formulario__label form-label ">Ciudad</label>
-              <input type="text" class="formulario__input form-control" id="input-ciudad" placeholder="Introduce tu nombre" required>
+              <input type="text"  name="ciudad" class="formulario__input form-control" id="input-ciudad" placeholder="Introduce tu ciudad" required>
             </div>
-            <!-- Apellidos -->
+            <!-- provincia -->
             <div class="formulario__campo col-12 col-md-4 mb-5">
               <label for="input-provincia" class="formulario__label form-label ">Provincia</label>
-              <input type="text" class="formulario__input form-control" id="input-provincia" placeholder="Introduce tus Apellidos" required>
+              <input type="text"  name="provincia" class="formulario__input form-control" id="input-provincia" placeholder="Introduce tu provincia" required>
             </div>
             <div class="formulario__campo col-12 col-md-4 mb-5">
               <label for="input-pais" class="formulario__label form-label ">País</label>
-              <input type="text" class="formulario__input form-control" id="input-pais" placeholder="Introduce tus Apellidos" required>
+              <input type="text"  name="pais" class="formulario__input form-control" id="input-pais" placeholder="Introduce tu País" required>
             </div>
           </div>
           <div class="formulario__campo col-12 col-md-12 mb-5">
             <label for="input-descripcion" class="formulario__label form-label ">¿A qué se dedica tu empresa?</label>
-            <input type="text" class="formulario__input form-control" id="input-descripcion" placeholder="Introduce tu nombre" >
+            <input type="text"  name="descripcion"  class="formulario__input form-control" id="input-descripcion" placeholder="Introduce tu nombre" >
           </div>
         </section>
         <h2 class="formulario__subseccion-titulo fs-4">Datos sobre las jornadas</h2>
@@ -181,12 +182,12 @@
       
           <!-- Checkbox -->
           <div class="formulario__confirmacion mb-3 form-check">
-            <input type="checkbox" class="formulario__checkbox form-check-input" id="politica" required>
+            <input type="checkbox1"  name="privacidad" class="formulario__checkbox form-check-input" id="politica" required>
             <label class="formulario__label form-check-label" for="politica">Acepto la política de privacidad</label>
           </div>
 
           <div class="formulario__confirmacion mb-3 form-check">
-            <input type="checkbox" class="formulario__checkbox form-check-input" id="info-comercial" required>
+            <input type="checkbox2"  name="informacion" class="formulario__checkbox form-check-input" id="info-comercial" required>
             <label class="formulario__label form-check-label" for="info-comercial">Acepto recibir información comercial</label>
           </div>
 
