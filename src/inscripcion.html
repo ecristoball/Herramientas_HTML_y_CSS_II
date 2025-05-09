@@ -23,6 +23,7 @@
         </nav>
 
         <form name="inscripcion" method="POST" data-netlify="true" class="formulario__formulario mx-auto mb-4 mt-4">
+          <input type="hidden" name="form-name" value="inscripcion" />
           <section class=" formulario__introduccion ">
             <p class="formulario__titulo fs-3 fs-md-1 mb-4 mt-4 lh-base pb-4 fw-bold">
               ¿Quieres participar en las jorandas sobre economía circular? 
@@ -57,7 +58,7 @@
             <!-- email -->
             <div class="formulario__campo col-12 col-md-6 mb-4">
               <label for="input-mail" class="formulario__label form-label">Email address</label>
-              <input type="mail"  name="mail" class="form-control" id="formulario__input input-mail" 
+              <input type="email"  name="mail" class="form-control" id="formulario__input input-mail" 
               aria-describedby="emailHelp" required>
               <div id="emailHelp" class="form-text">We'll never share your email 
                 with anyone else.</div>  
@@ -65,7 +66,7 @@
             <div class="formulario__campo col-12 col-md-6 mb-4">
               <label for="input-telefono" class="formulario__label form-label">
                 Número de teléfono</label>
-              <input type="telefono"  name="telefono" class="form-control" id="formulario__input input-telefono" >
+              <input type="tel"  name="telefono" class="form-control" id="formulario__input input-telefono" >
             </div>
           </div>
         </section>
@@ -74,7 +75,7 @@
           <div class="row">
             <div class="formulario__campo col-12 col-md-6 mb-5">
               <label for="input-empresa" class="formulario__label form-label ">Empresa</label>
-              <input type="empresa"  name="empresa" class="formulario__input form-control" id="input-empresa" placeholder="Introduce el nombre de tu empresa" required>
+              <input type="text"  name="empresa" class="formulario__input form-control" id="input-empresa" placeholder="Introduce el nombre de tu empresa" required>
             </div>
             <!-- cargo -->
             <div class="formulario__campo col-12 col-md-6 mb-5">
@@ -140,26 +141,26 @@
             </div>
             <div class="col-12 col-md-6 mb-3">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">Economía Circular en Vivienda</label>
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option1">
+              <label class="form-check-label" for="inlineCheckbox3">Economía Circular en Vivienda</label>
             </div>
             </div>
             <div class="col-12 col-md-6 mb-3">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">Economía Circular y Sostenibilidad</label>
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+              <label class="form-check-label" for="inlineCheckbox4">Economía Circular y Sostenibilidad</label>
             </div>
             </div>
             <div class="col-12 col-md-6 mb-3">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">Economía Circular y Medioambiental</label>
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option1">
+              <label class="form-check-label" for="inlineCheckbox5">Economía Circular y Medioambiental</label>
             </div>
             </div>
             <div class="col-12 col-md-6 mb-3">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">Economía Circular y Derecho</label>
+              <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option2">
+              <label class="form-check-label" for="inlineCheckbox6">Economía Circular y Derecho</label>
             </div>
             </div>
 </div>
