@@ -125,8 +125,10 @@
               </select>
 
           <div class="row py-4">
+            <h2 class="formulario__label form-label mb-2 mt-4">
+              Indica las ponencias a las que deseas asistir. Revisa los horarios para que las jornadas seleccionadas no coincidan.
+            </h2>
           
-            <label for="input-conferencias" class="formulario__label form-label mb-2 mt-4">Indica las ponencias  a las que deseas asistir. Revisa los horarios para que las jornadas seleccionadas no coinicdan.</label>
             <div class="formulario__checkbox col-12 col-md-6 mb-2">
               <div class="form-check form-check-inline">
                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" >
@@ -165,17 +167,22 @@
             </div>
 </div>
           <div class="mb-3">
-  <label for="input-conferencias" class="formulario__label form-label mb-2 mt-4">¿Asistirás presencialmente al evento de bienvenida?</label><br>
+  <h2 class="input-conferencias" class="formulario__label form-label mb-2 mt-4">¿Asistirás presencialmente al evento de bienvenida?</h2><br>
  
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="asistenciaBienvenida" id="asistenciaSi" value="si" required>
-    <label class="form-check-label" for="asistenciaSi">Sí</label>
-  </div>
-
-  <div class="form-check form-check-inline">
-    <input class="form-check-input" type="radio" name="asistenciaBienvenida" id="asistenciaNo" value="no" required>
-    <label class="form-check-label" for="asistenciaNo">No</label>
-  </div>
+  <fieldset class="mb-3">
+    <legend class="form-label">¿Asistirás al evento de bienvenida?</legend>
+  
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="asistenciaBienvenida" id="asistenciaSi" value="si" required>
+      <label class="form-check-label" for="asistenciaSi">Sí</label>
+    </div>
+  
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="asistenciaBienvenida" id="asistenciaNo" value="no" required>
+      <label class="form-check-label" for="asistenciaNo">No</label>
+    </div>
+  </fieldset>
+  
 </div>
 
         </section> 
