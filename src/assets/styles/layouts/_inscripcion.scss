@@ -1,43 +1,35 @@
-form {
-    container-type: inline-size;
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  /* Dentro del form, según el tamaño */
- 
-  
-  @container (min-width: #{$cqMinWidth}) {
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      //background-color: rgb(255, 136, 0);
+.formulario__formulario {
+    container-type: inline-size; 
+    container-name: secciones    
+  } 
+
+
+.formulario__label{
+    font-size:1.5rem;
+    @supports (font-size: 1cqw) {
+    font-size: 3cqw;
+        @container secciones (min-width:#{$cqMinWidth}) {
+        font-size: 2cqw;
+        }
     }
-    .col-12.col-md-4{
-        flex: 1 1 32%; /* Aproximadamente mitad de línea */
-        };
-    .col-12.col-md-5{
-    flex: 0 0 40%; /* Aproximadamente mitad de línea */
-    };
-    .col-12.col-md-6{
-        flex: 1 1 48%; /* Aproximadamente mitad de línea */
-        };
-    .col-12.col-md-7{
-        flex: 0 0 58%; /* Aproximadamente mitad de línea */
-        };
-    
-   /*
-    .col-12.col-md-4{
-      flex: 0 0 30%; 
-    }*/
+}
+
+::placeholder{
+  font-size:1rem;
+  @supports (font-size: 1cqw) {
+  font-size: 2cqw;
+    @container secciones (min-width:#{$cqMinWidth}) {
+      font-size: 1.5cqw;
+
+    }
   }
+}
   
 
-
-
-
-  :is(label, select) {
+  
+  
+ 
+  :is(h2,.formulario__label) {
     
     font-weight: bold;
   
@@ -51,30 +43,4 @@ form {
   }
   
 
- 
-//util
-.formulario__formulario {
-    container-type: inline-size; 
-    container-name: secciones    
-  } 
 
-
- label
-{
-  
-    font-size: 5cqw;
-
-    @container secciones (min-width:550px) {
-        //color:rgb(238, 0, 255);
-        font-size: 2cqw;
-    }
-    
-}
-input{
-  
-  @container secciones (min-width:650px) {
-      //color:rgb(238, 0, 255);
-      font-size: 2cqw;
-  }
-  
-}

@@ -14,7 +14,7 @@
 
     <main class="formulario body-bg body-color">
       
-      <div class="formulario__contenedro container">
+      <div class="formulario__contenedor container">
         <nav aria-label="ubicacion breadcrumb ">
           <ol class="ubicacion__listado breadcrumb fs-6 fs-md-4 mt-4 ">
             <li class="ubicacion__listado-item breadcrumb-item "><a href="./index.html">Home</a></li>
@@ -59,14 +59,13 @@
             <div class="formulario__campo col-12 col-md-6 mb-4">
               <label for="input-mail" class="formulario__label form-label">Email address</label>
               <input type="email"  name="mail" class="form-control" id="formulario__input input-mail" 
-              aria-describedby="emailHelp" required>
-              <div id="emailHelp" class="form-text">We'll never share your email 
-                with anyone else.</div>  
+              aria-describedby="emailHelp" placeholder="ejemplo@ejemplo.es" required>
+              <div id="emailHelp" class="form-text">Nunca compartiremos tu email</div>  
             </div>
             <div class="formulario__campo col-12 col-md-6 mb-4">
               <label for="input-telefono" class="formulario__label form-label">
                 Número de teléfono</label>
-              <input type="tel"  name="telefono" class="form-control" id="formulario__input input-telefono" >
+              <input type="tel"  name="telefono" class="form-control" id="formulario__input input-telefono" placeholder=" + 34 XX XX XX XX"  >
             </div>
           </div>
         </section>
@@ -112,7 +111,7 @@
           </div>
           <div class="formulario__campo col-12 col-md-12 mb-5">
             <label for="input-descripcion" class="formulario__label form-label ">¿A qué se dedica tu empresa?</label>
-            <input type="text"  name="descripcion"  class="formulario__input form-control" id="input-descripcion" placeholder="Introduce tu nombre" >
+            <input type="text"  name="descripcion"  class="formulario__input py-5 form-control" id="input-descripcion" placeholder="Cuentanos a qué se dedica tu empresa" >
           </div>
         </section>
         <h2 class="formulario__subseccion-titulo fs-4">Datos sobre las jornadas</h2>
@@ -124,7 +123,8 @@
                 <option value="2">Telemática</option>
                
               </select>
-          <div class="row">
+
+          <div class="row py-4">
           
             <label for="input-conferencias" class="formulario__label form-label mb-2 mt-4">Indica las ponencias  a las que deseas asistir. Revisa los horarios para que las jornadas seleccionadas no coinicdan.</label>
             <div class="formulario__checkbox col-12 col-md-6 mb-2">
@@ -165,8 +165,8 @@
             </div>
 </div>
           <div class="mb-3">
-  <label class="form-label">¿Asistirás presencialmente al evento de bienvenida?</label><br>
-  
+  <label for="input-conferencias" class="formulario__label form-label mb-2 mt-4">¿Asistirás presencialmente al evento de bienvenida?</label><br>
+ 
   <div class="form-check form-check-inline">
     <input class="form-check-input" type="radio" name="asistenciaBienvenida" id="asistenciaSi" value="si" required>
     <label class="form-check-label" for="asistenciaSi">Sí</label>
@@ -182,17 +182,19 @@
        
       
           <!-- Checkbox -->
-          <div class="formulario__confirmacion mb-3 form-check">
-            <input type="checkbox1"  name="privacidad" class="formulario__checkbox form-check-input" id="politica" required>
+          <div class="formulario__confirmacion m-2 p-4  form-check">
+            <input type="checkbox"  name="privacidad" class="formulario__checkbox form-check-input" id="politica" required>
             <label class="formulario__label form-check-label" for="politica">Acepto la política de privacidad</label>
           </div>
 
-          <div class="formulario__confirmacion mb-3 form-check">
-            <input type="checkbox2"  name="informacion" class="formulario__checkbox form-check-input" id="info-comercial" required>
+          <div class="formulario__confirmacion p-4 m-2 form-check">
+            <input type="checkbox"  name="informacion" class="formulario__checkbox form-check-input" id="info-comercial" required>
             <label class="formulario__label form-check-label" for="info-comercial">Acepto recibir información comercial</label>
           </div>
 
-          <button type="submit" class="formulario__boton btn btn-primary">Enviar</button>
+          <div class="d-flex justify-content-center m-5 p-5">
+            <button type="submit" class="formulario__boton px-5 py-2 btn btn-secundary fs-2">Enviar</button>
+          </div>
         </form>
       </div>
       
