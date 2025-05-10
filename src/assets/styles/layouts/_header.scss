@@ -66,7 +66,7 @@ header {
     }
     ul li a {
       text-decoration: none; /* Quita el subrayado de los enlaces */
-      //color: $font-white; /* Color opcional para los enlaces */
+      color: $font-white; /* Color opcional para los enlaces */
       font-size: 3dvw;
       @media (min-width: $mqMinWidth) {
         font-size: 3dvw;
