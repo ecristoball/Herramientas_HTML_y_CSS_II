@@ -20,7 +20,7 @@ header {
   .header__logoheader {
     width: 20%;
     height: 80%;
-    margin-left: 10px;
+    margin-left: 0.8rem;
     img {
       display: block;
       width: 75%; /* Ajusta el ancho al contenedor */
@@ -32,7 +32,7 @@ header {
   }
   .header__menu {
     max-width: 100%;
-    margin-left: 10px;
+    margin-left: 0.8rem;
 
     ul {
       display: flex;
@@ -44,9 +44,10 @@ header {
       max-width: 100%;
     }
     ul li a {
-      text-decoration: none; /* Quita el subrayado de los enlaces */
-      color: $font-white; /* Color opcional para los enlaces */
       font-size: 3dvw;
+      color: $font-white; /* Color opcional para los enlaces */
+      text-decoration: none; /* Quita el subrayado de los enlaces */
+           
       @media (min-width: $mqMinWidth) {
         font-size: 3dvw;
       }
