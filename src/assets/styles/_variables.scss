@@ -6,47 +6,44 @@ $font-family-sans-serif:
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
 $header-color: #359c48;
-$font-primary: #3a7044;//letra oficial 
+$font-primary: #3a7044; //letra oficial
 $font-white: #ffffff;
 $back-primary: #f8ffe5; // fondo oficial
 $container-white: #ffffff;
 /* stylelint-disable-next-line unit-disallowed-list */
 $mqMinWidth: 768px;
+/* stylelint-disable-next-line unit-disallowed-list */
 $cqMinWidth: 600px;
+/* stylelint-disable-next-line unit-disallowed-list */
 $cqMinWidthDesktop: 1400px;
 
-$link-color: rgb(6, 4, 112);
+$link-color: #060470;
 
 $theme-colors: (
   "primary": #f8ffe5,
-  "secundary":#3a7044,
-  
+  "secundary": #3a7044,
 );
 
-$body-color: #3a7044;//letra oficial 
-$body-bg: #f8ffe5;// fondo oficial
-$footer-bg:$header-color;
-
+$body-color: #3a7044; //letra oficial
+$body-bg: #f8ffe5; // fondo oficial
+$footer-bg: $header-color;
 
 //Varia les Sass
 
 // Personaliza con variables Sass el color y padding en breadcrumbs
 $breadcrumb-active-color: #101313;
-$breadcrumb-padding-x:2rem;
+$breadcrumb-padding-x: 2rem;
 
 // Personaliza con variables Sass el color  y tamaño de blockquote
 $blockquote-font-size: 2.5rem;
-$blockquote-footer-color: #24a62a;
+$blockquote-footer-color: #000000;
 $blockquote-footer-font-size: 1.3rem;
 
 // Personaliza con variables Sass el color de los enlaces de navbar
 $navbar-light-color: #ffe5f0;
 
 // Personaliza con variables Sass el color de los enlaces de navbar
-$tooltip-color:#ffe5f0;
-$tooltip-bg:#3a7044;
-$tooltip-max-width:40rem;
-$tooltip-font-size:1.5rem;
-
-
-
+$tooltip-color: #ffe5f0;
+$tooltip-bg: #3a7044;
+$tooltip-max-width: 40rem;
+$tooltip-font-size: 1.5rem;

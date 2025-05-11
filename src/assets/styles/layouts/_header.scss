@@ -1,27 +1,4 @@
-.no-js {
-  .collapse {
-    display: block !important; // Muestra el menú por defecto
-  }
-
-  .navbar-toggler {
-    display: none !important; // Oculta el botón de toggle
-  }
-}
-
-// Estilos normales (para navegadores modernos con JS)
-@supports (display: flex) {
-  .collapse {
-    display: none;
-
-    &.show {
-      display: block;
-    }
-  }
-}
-
 header {
-  
-  
   top: 0; /* Lo coloca en la parte superior */
   left: 0; /* Alinea a la izquierda */
   display: block;
@@ -37,7 +14,9 @@ header {
     justify-content: space-between; /*uno a la izda y el otro a la drcha */
     align-items: center; /* Centra verticalmente */
   }
-
+.header__general{
+  width: 100%;
+}
   .header__logoheader {
     width: 20%;
     height: 80%;
@@ -76,7 +55,7 @@ header {
 
 //con bootsrap
 .img-max-20 {
-  max-width: 20%;
+  max-width: 40%;
   height: auto;
 }
 

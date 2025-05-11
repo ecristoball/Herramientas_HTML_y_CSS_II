@@ -1,104 +1,74 @@
-.no-js {
-  .collapse {
-    display: block !important; // Muestra el menú por defecto
+//@layer base, layout, componentes, mejoras;
+
+/* general de la página de ponentes*/
+@layer layout {
+  .ponentes {
+    container-type: inline-size;
+    container-name: ponentes;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6rem;
+    width: 90%;
+    margin: 3rem auto;
   }
 
-  .navbar-toggler {
-    display: none !important; // Oculta el botón de toggle
+  .ponentes__title {
+    text-align: center;
   }
 }
 
-// Estilos normales (para navegadores modernos con JS)
-@supports (display: flex) {
-  .collapse {
-    display: none;
-
-    &.show {
-      display: block;
-    }
-  }
-}
-
-/************pagina ponentes con Flexbox **/ /////////
-.ponentes {
-  container-type: inline-size;
-  container-name: ponentes;
-  display: flex; /* UsaFlexbox */
-  flex-wrap: wrap; /* Permite que los elementos se ajusten cuando no hay suficiente espacio */
-  justify-content: center;
-  gap: 6rem;
-  width: 90%;
-  margin: 3rem auto;
-  /* Container query */
- 
-
-  .ponente {
-    /* Container query */
+/* Estilos del componente ponente*/
+@layer componentes {
+  .ponentes .ponente {
     container-type: inline-size;
     container-name: ponente;
-    //moviles
-    
     width: 90%;
     padding: 1rem;
-    text-align: center; /* Centra el contenido dentro de cada "participante" */
-    border: 0.5rem solid #3a7044; 
-    border-radius: 2rem; /* Bordes redondeados */
-   
-    //dispositivos grandes- 3 columnas 
-    @container ponentes (min-width:#{$mqMinWidth}) {
-      max-width: 45%; /* Cada participante ocupará el 45% del ancho del contenedor */
-    }
+    text-align: center;
+    border: 0.5rem solid #3a7044;
+    border-radius: 2rem;
 
-    @container ponentes (min-width:#{$cqMinWidthDesktop}) {
-      max-width: 30%; /* Cada participante ocupará el 30% del ancho del contenedor */
-    }
-   
     .imagen-ovalada {
       max-width: 40%;
       height: auto;
-      object-fit: cover;
-      border-radius: 50%; /* Hace forma de óvalo horizontal */
       margin: 1rem 0;
-
-      @container ponente (min-width: 400px) {
-        max-width: 30%;
-        height:auto;
-      }
+      object-fit: cover;
+      border-radius: 50%;
     }
 
     .ponente__datos {
       width: 80%;
       margin: 0.5rem auto;
-      font-size: 3rem;  
-      line-height: 150%;   
-      
-      @supports (font-size: 1cqw) {
-       font-size: 5cqw;
-      }
+      font-size: 3rem;
+      line-height: 150%;
     }
   }
-}  
-.ponentes__title {
-  text-align: center;
 }
-  
- 
-  
-  /* Container query */
- 
-  /********* PEC2 comun*//////
-  
-  
-  /*
-  ol.list-group-numbered li:has(strong) {
-    background-color: rgba(243, 9, 9, 0.856)!important; // Un pequeño contraste
-    
-  }*/
-  article:has(blockquote) blockquote {
-    border-left: 4px solid rgb(128, 26, 0);
-    padding-left: 1rem;
-    margin-left: 0;
+
+/*Container Queries y mejoras condicionales */
+@layer mejoras {
+  @container ponentes (min-width: #{$mqMinWidth}) {
+    .ponente {
+      max-width: 45%;
+    }
   }
-  .verde-personalizado {
-    background-color: #123456;
+
+  @container ponentes (min-width: #{$cqMinWidthDesktop}) {
+    .ponente {
+      max-width: 30%;
+    }
   }
+
+  @container ponente (min-width: 400px) {
+    .imagen-ovalada {
+      max-width: 30%;
+    }
+  }
+
+  @supports (font-size: 1cqw) {
+    .ponente__datos {
+      font-size: 5cqw;
+    }
+  }
+}
